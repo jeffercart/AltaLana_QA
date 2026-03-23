@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Alta Lana - Precios</title>
+  <title>Alta Lana - Calculadora</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,76 +11,39 @@
   <div class="container">
     <img src="img/altalana_completo.png" alt="Alta Lana Isotipo" class="logo">
 
-    <p class="sub">Consultá por tu alfombra personalizada:</p>
-
-    <!-- PASO 1 -->
-    <h2 class="step">1. Elegí el tipo de diseño</h2>
-
+    <h2 class="step2">¡Bienvenido!</h2>
+    <p class="sub2">Gracias por visitarnos. <br>Hacemos alfombras a mano. <br>Acá podés conocer nuestro catálogo o calcular el precio aproximado de tu alfombra: </p>
     <div class="tipos">
 
-      <div class="tipo" onclick="seleccionarTipo(event, 'simple')">
-        <h3>Simple</h3>
-        <p class="detalle">Formas básicas / pocos colores</p><br>
+      <a href="catalogo.html" class="tipo">
+        <h3>Catálogo</h3>
+        <p class="detalle">Línea Alta Lana</p><br>
         <img src="img/altalana_isotipo.png" alt="Alta Lana Isotipo" class="logo2">
-      </div>
+      </a>
 
-      <div class="tipo" onclick="seleccionarTipo(event, 'compleja')">
-        <h3>Compleja</h3>
-        <p class="detalle">Ilustraciones / muchos detalles</p><br>
-        <img src="img/altalana_body.png" alt="Alta Lana Cuerpo" class="logo3">
-      </div>
+      <a href="calculador.html" class="tipo">
+        <h3>Personalizadas</h3>
+        <p class="detalle">Calculá el precio</p><br>
+        <img src="img/altalana_personal.png" alt="Alta Lana Cuerpo" class="logo3">
+      </a>
 
     </div>
-
-    <!-- PASO 2 -->
-    <h2 class="step">2. Elegí el tamaño aproximado</h2>
-
-    <div class="sizes">
-
-      <div class="size" onclick="seleccionarSize(event, 'XS', 20000)">
-        <h3>XS</h3>
-        <p>20×20 cm</p>
-      </div>
-
-      <div class="size" onclick="seleccionarSize(event, 'S', 45000)">
-        <h3>S</h3>
-        <p>40×40 cm</p>
-      </div>
-
-      <div class="size" onclick="seleccionarSize(event, 'M', 70000)">
-        <h3>M</h3>
-        <p>60×40 cm</p>
-      </div>
-
-      <div class="size" onclick="seleccionarSize(event, 'L', 100000)">
-        <h3>L</h3>
-        <p>65×65 cm</p>
-      </div>
-        <!-- FOOTER -->
-      <div class="footer">
-      <h2 id="resultado">Precio aproximado: $20.000</h2>
-  
-      <div class="nota">
-        Para otros tamaños escribinos por WhatsApp 💬
-      </div>
-  
-      <button onclick="enviarWhatsApp()" class="btn whatsapp">
-        ¡Contactános!
-      </button>
-      </div>
 
     <div class="size2">
       <h3 class="piet">ALTA LANA</h3>
         <p class="pie">Hecho a mano</p>
         <p class="pie">Hecho en Argentina</p>
     </div>
+
+    <a href="https://wa.me/5491164497463?text=Hola%20quiero%20una%20alfombra%20de%20Alta%20Lana" class="wsp2" target="_blank">
+      <img src="img/wsp.png" alt="WS Logo" class="wslogo">
+    </a>
+    
     </div>
 
+   
   </div>
 
-  
-
-  <script src="script.js"></script>
-
+ 
 </body>
 </html>
