@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alta Lana - Calculadora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <a href="index.html">
+    <img src="img/altalana_completo.png" alt="Alta Lana Logo" class="logo">
+    </a>
+    <p class="sub">Consultá por tu alfombra personalizada:</p>
+
+    <!-- PASO 1 -->
+    <h2 class="step">1. Elegí el tipo de diseño</h2>
+
+    <div class="tipos">
+
+      <div class="tipo" onclick="seleccionarTipo(event, 'simple')">
+        <h3>Simple</h3>
+        <p class="detalle">Formas básicas / pocos colores</p><br>
+        <img src="img/altalana_isotipo.png" alt="Alta Lana Isotipo" class="logo2">
+      </div>
+
+      <div class="tipo" onclick="seleccionarTipo(event, 'compleja')">
+        <h3>Compleja</h3>
+        <p class="detalle">Ilustraciones / muchos detalles</p><br>
+        <img src="img/altalana_tipo.png" alt="Alta Lana Cuerpo" class="logo3">
+      </div>
+
+    </div>
+
+    <!-- PASO 2 -->
+    <h2 class="step">2. Elegí el tamaño aproximado en cm</h2>
+
+    <div class="sizes">
+
+      <div class="size" onclick="seleccionarSize(event, 'XS', 20000)">
+        <h3>XS</h3>
+        <p>20×20 / 30×10</p>
+      </div>
+
+      <div class="size" onclick="seleccionarSize(event, 'S', 45000)">
+        <h3>S</h3>
+        <p>35×35 / 40×30</p>
+      </div>
+
+      <div class="size" onclick="seleccionarSize(event, 'M', 70000)">
+        <h3>M</h3>
+        <p>50×50 / 55×45</p>
+      </div>
+
+      <div class="size" onclick="seleccionarSize(event, 'L', 100000)">
+        <h3>L</h3>
+        <p>60×60 / 65×65</p>
+      </div>
+        <!-- FOOTER -->
+      <div class="footer">
+      <h2 id="resultado">Precio aproximado: $20.000</h2>
+  
+      <div class="nota">
+        Para otros tamaños escribinos por WhatsApp 💬
+      </div>
+  
+      <button onclick="enviarWhatsApp()" class="btn whatsapp">
+        ¡Contactános!
+      </button>
+      </div>
+
+    <div class="size2">
+      <h3 class="piet">ALTA LANA</h3>
+        <p class="pie">Hecho a mano</p>
+        <p class="pie">Hecho en Argentina</p>
+    </div>
+    </div>
+
+  </div>
+
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>
