@@ -15,13 +15,10 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-
   background-image: url("img/back.png");
   background-size: cover;
   background-position: center;
-
   opacity: 0.20; /* 👈 controlás transparencia */
-
   z-index: -1;
 }
 /* CONTENEDOR */
@@ -42,7 +39,7 @@ h1 {
 
 .sub {
   color: #666;
-  font-size: 14px;
+  font-size: 15px;
   padding: 0;
   margin: 0;
 }
@@ -96,6 +93,7 @@ h1 {
   color: inherit; /* mantiene color original */
   display: block; /* hace que el <a> se comporte como div */
 }
+
 h3 {
   margin: 5px 0 5px 0;
   font-size: 16px;
@@ -158,16 +156,17 @@ h3 {
   border-color: black;
 }
 
-/* BOTÓN */
 .btn {
-  width: 100%;
-  padding: 10px;
+  width: 25%;
+  padding: 5px;
   border: none;
-  border-radius: 10px;
-  background-color: #2fbb62;
-  color: white;
-  font-size: 14px;
+  background-color: #ffffff;
+  text-align: right;
   cursor: pointer;
+}
+
+.wsverde {
+  width: 50%;
 }
 
 .wsp2 {
@@ -198,11 +197,16 @@ h3 {
   border-top: 1px solid #ddd;
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between; /* separa izquierda y derecha */
+  align-items: center; /* centra verticalmente el botón */
   gap: 5px;
   box-shadow: 0 -4px 15px rgba(0,0,0,0.08);
 }
 
+.fot {
+  display: flex;
+  flex-direction: column; /* uno arriba del otro */
+}
 /* PRECIO */
 #resultado {
   margin: 0;
@@ -213,7 +217,8 @@ h3 {
 .nota {
   font-size: 12px;
   color: #666;
-  margin-bottom: 3px;
+  width: 100%;
+  margin-top: 3px;
 }
 
 .logo {
@@ -231,7 +236,7 @@ h3 {
 }
 
 .logo3 {
-  width: 60%;
+  width: 50%;
   margin: auto;
   margin-top: -8px;
   max-width: 180px;
@@ -250,13 +255,12 @@ h3 {
   .logo2 {
     width: 50%;
     margin: auto;
-    margin-top: 6px;
     max-width: 200px;
     display: block;
   }
   
   .logo3 {
-    width: 45%;
+    width: 40%;
     margin: auto;
     max-width: 200px;
     display: block;
@@ -270,6 +274,7 @@ h3 {
 
   .btn {
     font-size: 16px;
+    width: 15%;
   }
 
   #resultado {
@@ -289,13 +294,12 @@ h3 {
   .logo2 {
     width: 50%;
     margin: auto;
-    margin-top: 8px;
     max-width: 180px;
     display: block;
   }
   
   .logo3 {
-    width: 45%;
+    width: 35%;
     margin: auto;
     max-width: 180px;
     display: block;
