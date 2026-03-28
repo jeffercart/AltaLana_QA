@@ -66,7 +66,7 @@ function seleccionarSize(e, nombre, base) {
 }
 
 function enviarWhatsApp() {
-  var numero = "5491164497463";
+  var numero = "5491178273936";
 
   var mensaje = ultimoCalculo || "Hola! Quiero consultar por una alfombra";
 
