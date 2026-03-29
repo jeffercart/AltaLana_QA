@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alfombras Personalizadas - Alta Lana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="description" content="Calculá el precio aproximado de tu alfombra tufting personalizada. Elegí la complejidad del diseño y el tamaño ideal para tu espacio con Alta Lana.">
+  <meta name="keywords" content="presupuesto alfombra, calculadora tufting, alfombras a medida, Alta Lana, alfombras personalizadas, Argentina, hecho a mano, precios, tapetes, precios alfombras">
+  <meta name="author" content="Alta Lana">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Cotizá tu Alfombra Personalizada | Alta Lana">
+  <meta property="og:description" content="Ingresá el tamaño y la complejidad de tu diseño para conocer el valor aproximado de tu alfombra hecha a mano.">
+  <meta property="og:image" content="https://altalana.com.ar/img/altalana_personal.png">
+  <meta property="og:url" content="https://altalana.com.ar/calculador.html">
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="Alta Lana | Alfombras Tufting Hechas a Mano">
+  <meta property="og:description" content="Creamos alfombras personalizadas hechas a mano. Calculá el precio de tu diseño a medida o mirá nuestro catálogo.">
+  <meta property="og:image" content="https://altalana.com.ar/img/altalana_completo.png">
+  <meta property="og:url" content="https://altalana.com.ar/index.html">
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="Alta Lana | Alfombras hechas a mano en Argentina">
+  <meta property="og:description" content="Creamos alfombras tufting personalizadas, hechas a mano. Diseños únicos para transformar tus espacios.">
+  <meta property="og:image" content="https://altalana.com.ar/img/altalana_completo.png">
+  <meta property="og:url" content="https://altalana.com.ar/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Alta Lana">
+  <meta property="og:locale" content="es_AR">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alta Lana | Alfombras artesanales">
+  <meta name="twitter:description" content="Diseños personalizados hechos a mano en Argentina.">
+  <meta name="twitter:image" content="https://altalana.com.ar/img/altalana_completo.png">
+  <meta name="twitter:site" content="@altalana.tuf">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="icon" href="img/altalana_isotipo.png" type="image/png">
+</head>
+<body>
+  
+  <main class="container">
+    
+    <header>
+      <a href="index.html">
+        <img src="img/altalana_completo.png" alt="Alta Lana Logo" class="logopersonal">
+      </a>
+      <p class="sub">Calcula el precio aproximado de tu alfombra. Selecciona el tipo de diseño, tamaño aproximado y contactános:</p>
+    </header>
+
+    <section>
+      <h2 class="step">1. Tipo de diseño</h2>
+      <div class="tipos">
+        <article class="tipo" onclick="seleccionarTipo(event, 'simple')" role="button" tabindex="0">
+          <h3>Simple</h3>
+          <p class="detalle">Formas básicas / pocos colores</p><br>
+          <img src="img/altalana_isotipo.png" alt="Alta Lana Isotipo" class="logocat2">
+        </article>
+
+        <article class="tipo" onclick="seleccionarTipo(event, 'compleja')" role="button" tabindex="0">
+          <h3>Complejo</h3>
+          <p class="detalle">Ilustraciones / muchos detalles</p><br>
+          <img src="img/altalana_tipo.png" alt="Alta Lana Cuerpo" class="logocat3">
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="step">2. Tamaño aproximado en cm</h2>
+      <div class="sizes">
+        <article class="size" onclick="seleccionarSize(event, 'XS', 20000)" role="button" tabindex="0">
+          <h3>XS</h3>
+          <p>20×20 / 30×10</p>
+        </article>
+
+        <article class="size" onclick="seleccionarSize(event, 'S', 45000)" role="button" tabindex="0">
+          <h3>S</h3>
+          <p>35×35 / 40×30</p>
+        </article>
+
+        <article class="size" onclick="seleccionarSize(event, 'M', 70000)" role="button" tabindex="0">
+          <h3>M</h3>
+          <p>50×50 / 55×45</p>
+        </article>
+
+        <article class="size" onclick="seleccionarSize(event, 'L', 100000)" role="button" tabindex="0">
+          <h3>L</h3>
+          <p>60×60 / 65×65</p>
+        </article>
+      </div> </section>
+
+    <aside class="footer">
+      <div class="fot">
+        <h2 id="resultado">Precio aproximado: $20.000</h2>
+        <p class="nota">Para otros tamaños escribí por WhatsApp 💬</p>
+      </div>
+      <button onclick="enviarWhatsApp()" class="btn" aria-label="Enviar mensaje por WhatsApp">
+        <img src="img/ws_verde.png" alt="WhatsApp" class="wsverde">
+      </button>
+    </aside>
+
+    <footer class="size2">
+      <h3 class="piet">ALTA LANA</h3>
+        <p class="pie">Hecho a mano</p>
+        <p class="pie">Hecho en Argentina</p>
+        <p class="pie">altalana.com.ar</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+  <a href="index.html" class="volver-inicio">↑ Volver al inicio</a>
+</body>
+</html>
