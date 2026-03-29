@@ -29,19 +29,20 @@ body::before {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
-/* TEXTOS */
+header{
+  gap: 12px;;
+}
 h1 {
-  text-align: center;
   margin: 0;
-  font-size: 22px;
+  padding: 0.5em;;
 }
 
 .sub {
   color: #666;
   font-size: 15px;
-  padding: 0;
+  padding-top: 15px;
   margin: 0;
 }
 
@@ -59,7 +60,7 @@ h1 {
 }
 
 .step2 {
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
 }
 /* TIPOS */
@@ -168,24 +169,28 @@ h3 {
 
 .wsverde {
   width: 50%;
+  
 }
 
 .wsp2 {
-  position: fixed;
-  bottom: 20px;   /* separación del borde */
-  right: 20px;
-  width: 55px;
-  height: 55px;
+  width: 15%;
+  z-index: 1000;
+}
+
+.wsp3 {
+  width: 15%;
   z-index: 1000;
 }
 
 .wsp4 {
-  position: fixed;
-  bottom: 20px;   /* separación del borde */
-  left: 20px;
-  width: 55px;
-  height: 55px;
+  width: 15%;
   z-index: 1000;
+}
+
+.ttlogo {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .wslogo {
@@ -195,8 +200,8 @@ h3 {
 }
 
 .iglogo {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -205,9 +210,22 @@ h3 {
   transition: 0.2s;
 }
 
+.wsp3:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
 .wsp4:hover {
   transform: scale(1.1);
   transition: 0.2s;
+}
+.enlaces {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 /* FOOTER */
@@ -243,8 +261,15 @@ h3 {
 }
 
 .logo {
-  width: 27%;
+  width: 25%;
   max-width: 180px;
+  margin: 0 auto 5px auto;
+  display: block;
+}
+
+.logopersonal {
+  width: 21%;
+  max-width: 160px;
   margin: 0 auto 5px auto;
   display: block;
 }
@@ -318,9 +343,25 @@ h3 {
   .footer {
     width: 100%;
     margin: auto;
-  
   }
+  .wsp2 {
+  width: 12.5%;
+  z-index: 1000;
+}
 
+.wsp3 {
+  width: 12.5%;
+  z-index: 1000;
+}
+
+.wsp4 {
+  width: 12.5%;
+  z-index: 1000;
+}
+  .enlaces {
+  position: relative;
+  padding: 0px;
+  }
   .btn {
     font-size: 16px;
     width: 15%;
@@ -343,7 +384,12 @@ h3 {
   .sub2 {
   font-size: 16px;
   }
-
+  .logo {
+  width: 20%;
+  max-width: 180px;
+  margin: 0 auto 5px auto;
+  display: block;
+}
   .logo2 {
     width: 40%;
     margin: auto;
@@ -357,7 +403,24 @@ h3 {
     max-width: 180px;
     display: block;
   }
+.wsp2 {
+  width: 10%;
+  z-index: 1000;
+}
 
+.wsp3 {
+  width: 10%;
+  z-index: 1000;
+}
+
+.wsp4 {
+  width: 10%;
+  z-index: 1000;
+}
+  .enlaces {
+  position: relative;
+  padding: 0px;
+  }
   .footer {
     width: 100%;
     margin: auto;
@@ -371,4 +434,17 @@ h3 {
     font-size: 18px;
   }
 
+}
+
+#sketch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Para que parezca un botón/enlace */
+}
+
+/* Evita que el canvas se salga del contenedor */
+#sketch-container canvas {
+  max-width: auto;
+  height: auto !important;
 }
